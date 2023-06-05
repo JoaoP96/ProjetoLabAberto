@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/download.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Cadastro Concluído!</h1>
+    <p class="description">Seu código de barras está pronto para download.</p>
+    <a href="{{ url_for('download_barcode', filename=barcode_image_filename) }}" class="button">Baixar Código de Barras</a>
+</div>
+</body>
+</html>
